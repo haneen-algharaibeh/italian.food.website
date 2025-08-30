@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8BC2544-3894-47A2-8E4F-BF3AC1BA6CB3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITALIAN_FOOD</RootNamespace>
+    <AssemblyName>ITALIAN_FOOD</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Choose_Food.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choose_Food.Designer.cs">
+      <DependentUpon>Choose_Food.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control.cs" />
+    <Compile Include="Drinks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drinks.Designer.cs">
+      <DependentUpon>Drinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet.cs">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="loginDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="opinion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opinion.Designer.cs">
+      <DependentUpon>opinion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pasta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pasta.Designer.cs">
+      <DependentUpon>Pasta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pizza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pizza.Designer.cs">
+      <DependentUpon>pizza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thanks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thanks.Designer.cs">
+      <DependentUpon>Thanks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Total.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Total.Designer.cs">
+      <DependentUpon>Total.cs</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.cs">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Choose_Food.resx">
+      <DependentUpon>Choose_Food.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drinks.resx">
+      <DependentUpon>Drinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opinion.resx">
+      <DependentUpon>opinion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pasta.resx">
+      <DependentUpon>Pasta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pizza.resx">
+      <DependentUpon>pizza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Thanks.resx">
+      <DependentUpon>Thanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Total.resx">
+      <DependentUpon>Total.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="loginDataSet.xsc">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet.xss">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White Modern Food Logo %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="login.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\White Modern Food Logo %284%296.png" />
+    <None Include="Resources\White Modern Food Logo %284%295.png" />
+    <None Include="Resources\White Modern Food Logo %284%294.png" />
+    <None Include="Resources\White Modern Food Logo %284%293.png" />
+    <None Include="Resources\download %284%29.jfif" />
+    <None Include="Resources\c00c2606-543f-4ceb-9514-e9dea7a36c681.jfif" />
+    <None Include="Resources\c00c2606-543f-4ceb-9514-e9dea7a36c68.jfif" />
+    <None Include="Resources\4224a71d-0341-421f-ace8-6eac1187ef62.jfif" />
+    <None Include="Resources\155d5d12-3cc2-45f6-85bc-92e7717d3bdd.jfif" />
+    <None Include="Resources\0b3e89d5-6cf4-4945-b123-278b550fa7c8.jfif" />
+    <None Include="Resources\White Modern Food Logo %282%295.png" />
+    <None Include="Resources\White Modern Food Logo %284%292.png" />
+    <None Include="Resources\White Modern Food Logo %283%293.png" />
+    <None Include="Resources\White Modern Food Logo %282%294.png" />
+    <None Include="Resources\White Modern Food Logo %284%291.png" />
+    <None Include="Resources\White Modern Food Logo %282%293.png" />
+    <None Include="Resources\1145c512-2545-4322-8e29-7ef9b009833f.jfif" />
+    <None Include="Resources\edada4f9-c88b-4767-99b5-5d4a2e670337.jfif" />
+    <None Include="Resources\e5436050-b71f-4ab6-b556-279bd696fd7f.jfif" />
+    <None Include="Resources\7a9f175b-248b-409b-b2e9-767063170329.jfif" />
+    <None Include="Resources\White Modern Food Logo %283%292.png" />
+    <None Include="Resources\White Modern Food Logo %282%292.png" />
+    <None Include="Resources\ee20e343-4225-476a-a258-725683c7ebd41.jfif" />
+    <None Include="Resources\ef384ca2-9bac-45d7-ad30-eb647616e40c %281%29.jfif" />
+    <None Include="Resources\f9bcb65c-cb42-4a07-972c-b4d694818898.jfif" />
+    <None Include="Resources\ddbea42f-8e69-4789-98d3-53493b6fc590.jfif" />
+    <None Include="Resources\ee20e343-4225-476a-a258-725683c7ebd4.jfif" />
+    <None Include="Resources\076cc3d2-c138-4c7e-ab8e-895cf3a976c6.jfif" />
+    <None Include="Resources\White Modern Food Logo %283%291.png" />
+    <None Include="Resources\White Modern Food Logo %282%291.png" />
+    <None Include="Resources\451f5b1f-c09c-4087-8c0c-8cee0e143c2b.jfif" />
+    <None Include="Resources\ef384ca2-9bac-45d7-ad30-eb647616e40c.jfif" />
+    <None Include="Resources\White Modern Food Logo %283%29.png" />
+    <None Include="Resources\White Modern Food Logo %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
